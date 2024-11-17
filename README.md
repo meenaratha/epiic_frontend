@@ -1,3 +1,25 @@
+<!-- github to local istall react js -->
+
+npm install
+
+<!-- github deploy  -->
+npm install gh-pages --save-dev
+
+Add a homepage Field to package.json: In your package.json file, add a homepage field with the URL of your GitHub Pages site:
+
+"homepage": "https://<your-username>.github.io/<repository-name>"
+
+<!-- package.json -->
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
